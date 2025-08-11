@@ -1,2 +1,60 @@
-# Opioid-Overdose-Regression-Analysis
-Statistical and spatial regression analysis of opioid overdose outcomes in South Carolina at county and ZIP levels, assessing naloxone access and socioeconomic factors using Python and GIS. Includes OLS, Poisson, Negative Binomial, and spatial models with full diagnostics
+# Opioid Overdose Regression Analysis – South Carolina
+
+This repository contains two related statistical and spatial regression analyses at **county** and **ZIP** levels, investigating the relationship between opioid overdose outcomes and factors such as **naloxone access**, **socioeconomic indicators**, and **demographics** in South Carolina.
+
+## Project Overview
+The project explores:
+- Impact of naloxone distribution (counts & proximity) on overdose mortality (county) and opioid-related ED visits (ZIP)
+- Influence of community-level socioeconomic and demographic factors
+- Spatial dependencies in overdose outcomes
+
+## Repository Structure
+opioid-overdose-regression-analysis/
+│
+├── county_level/ # County-level regression scripts, sample data schema, and results
+├── zip_level/ # ZIP-level regression scripts, sample data schema, and results
+├── docs/ # Reports, visualizations, and summaries
+├── LICENSE # Custom license for viewing only
+└── README.md # This file
+
+
+## Methods & Models
+- **County-Level**: OLS with full diagnostics, Poisson & Negative Binomial Regression, Spatial Error (SEM) and Spatial Lag (SLM) Models
+- **ZIP-Level**: Poisson & Negative Binomial Regression, Spatial Lag/Durbin Models
+- **Diagnostics**: Linearity, homoscedasticity, residual normality, multicollinearity (VIF), Moran’s I
+- **Model Comparison**: AIC/BIC, R², log-likelihood, residual plots
+
+## Key Features
+- Multiple naloxone measures: center counts, distances from centroids (10, 20, 30 miles), closest/average distances
+- Buprenorphine provider counts as a treatment access proxy
+- Rich set of socioeconomic & demographic variables
+
+## Data
+- **Raw datasets are excluded** for privacy.
+- Synthetic sample data and schema files are provided for reproducibility.
+
+## Tech Stack
+- Python: `pandas`, `numpy`, `statsmodels`, `geopandas`, `PySAL`
+- GIS processing in ArcGIS
+
+## Key Findings (High-Level)
+- Naloxone access has a consistent, significant impact on reducing opioid overdose deaths (county level) and opioid-related ED visits (ZIP level).
+- County-level analysis:
+  * Higher rates of naloxone centers per 1,000 square miles are strongly associated with lower death rates.
+  * Spatial Durbin Models capture regional spillover effects — areas benefit from neighboring counties’ naloxone availability.
+  * Proportion of White Population is positively associated with death rates when controlling for other factors.
+- ZIP-level analysis:
+  * Center count is positively associated with ED visits (reflecting targeting toward high-need areas).
+  * Distance-based measures show a negative association — closer proximity to naloxone centers correlates with fewer ED visits.
+- Policy implications:
+  * Distance-based planning can better target underserved areas.
+  * Regional strategies are more effective than isolated local interventions.
+  * Accessibility and equity in naloxone distribution remain critical for harm reduction.
+
+## License
+This project is protected under a custom license.  
+You are welcome to **view the code** for personal, educational, or evaluation purposes.  
+However, **copying, reproducing, modifying, or using** this code without prior written permission from the author is strictly prohibited.  
+
+Collaboration and contributions are welcome but must be discussed in advance.  
+📩 Contact: [jahanmelika@gmail.com or www.linkedin.com/in/melika-jahan-beikloo]
