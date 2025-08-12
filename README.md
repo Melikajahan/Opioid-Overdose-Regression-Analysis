@@ -9,13 +9,14 @@ The project explores:
 - Spatial dependencies in overdose outcomes
 
 ## Repository Structure
+```plaintext
 opioid-overdose-regression-analysis/
 │
-├── county_level/ # County-level regression scripts, sample data schema, and results
-├── zip_level/ # ZIP-level regression scripts, sample data schema, and results
-├── docs/ # Reports, visualizations, and summaries
-├── LICENSE # Custom license for viewing only
-└── README.md # This file
+├── county_level/       # County-level regression scripts, sample data schema, and results
+├── zip_level/          # ZIP-level regression scripts, sample data schema, and results
+├── docs/               # Reports, visualizations, and summaries
+├── LICENSE             # Custom license for viewing only
+└── README.md           # Main project overview
 
 
 ## Methods & Models
