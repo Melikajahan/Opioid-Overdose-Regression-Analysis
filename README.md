@@ -40,10 +40,11 @@ opioid-overdose-regression-analysis/
 
 ## Data
 - **County-level (open):** Included under `county_level/data/` with a separate data license (**CC BY 4.0**, see `DATA_LICENSE.md`). Detailed source attribution in `data-provenance/PROVENANCE.md`.
-### County-level data (files)
-- [`Edited_Dataset.csv`](county_level/data/raw/Edited_Dataset.csv) — raw input
-- [`county_master.csv`](county_level/data/processed/county_master.csv) — processed canonical copy
-- [`county_dictionary.csv`](county_level/data/dictionary/county_dictionary.csv) — column dictionary
+ ### County-level data (files)
+ - [`Edited_Dataset.csv`](county_level/data/raw/Edited_Dataset.csv) — raw input
+ - [`county_master.csv`](county_level/data/processed/county_master.csv) — processed canonical copy
+ - [`county_dictionary.csv`](county_level/data/dictionary/county_dictionary.csv) — column dictionary
+
 - **ZIP-level (restricted):** **Not included** due to confidentiality. The folder `zip_level/data/` contains a README describing required file names/columns for local reproduction. Synthetic schemas may be provided for structure only (no real values).
 > Note: This repository’s *code* remains under a custom “view-only” license (see `LICENSE`). County-level *data* are separately licensed.
 
