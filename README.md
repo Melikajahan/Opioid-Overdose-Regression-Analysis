@@ -12,7 +12,7 @@ The project explores:
 ```plaintext
 opioid-overdose-regression-analysis/
 │
-├── county_level/       # County-level regression scripts, sample data schema, and results
+├── county_level/       # County-level regression scripts, data, and results
 ├── zip_level/          # ZIP-level regression scripts, sample data schema, and results
 ├── docs/               # Reports, visualizations, and summaries
 ├── LICENSE             # Custom license for viewing only
