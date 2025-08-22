@@ -13,10 +13,17 @@ The project explores:
 opioid-overdose-regression-analysis/
 │
 ├── county_level/       # County-level regression scripts, data, and results
+│  ├─ data/
+│  │  ├─ raw/          
+│  │  ├─ processed/    
+│  │  └─ dictionary/  
 ├── zip_level/          # ZIP-level regression scripts, sample data schema, and results
 ├── docs/               # Reports, visualizations, and summaries
+├─ data-provenance/
+│  └─ PROVENANCE.md
 ├── LICENSE             # Custom license for viewing only
-└── README.md           # Main project overview
+├── README.md           # Main project overview
+└──DATA_LICENSE.md
 ```
 
 
@@ -32,8 +39,13 @@ opioid-overdose-regression-analysis/
 - Rich set of socioeconomic & demographic variables
 
 ## Data
-- **Raw datasets are excluded** for privacy.
-- Synthetic sample data and schema files are provided for reproducibility.
+- **County-level (open):** Included under `county_level/data/` with a separate data license (**CC BY 4.0**, see `DATA_LICENSE.md`). Detailed source attribution in `data-provenance/PROVENANCE.md`.
+### County-level data (files)
+- [`Edited_Dataset.csv`](county_level/data/raw/Edited_Dataset.csv) — raw input
+- [`county_master.csv`](county_level/data/processed/county_master.csv) — processed canonical copy
+- [`county_dictionary.csv`](county_level/data/dictionary/county_dictionary.csv) — column dictionary
+- **ZIP-level (restricted):** **Not included** due to confidentiality. The folder `zip_level/data/` contains a README describing required file names/columns for local reproduction. Synthetic schemas may be provided for structure only (no real values).
+> Note: This repository’s *code* remains under a custom “view-only” license (see `LICENSE`). County-level *data* are separately licensed.
 
 ## Tech Stack
 - Python: `pandas`, `numpy`, `statsmodels`, `geopandas`, `PySAL`
