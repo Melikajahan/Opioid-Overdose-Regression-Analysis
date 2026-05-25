@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Opioid Overdose Regression Analysis – South Carolina"
+message: "If you use this repository, please cite the associated manuscript."
+type: software
+authors:
+  - family-names: "Jahan Beikloo"
+    given-names: "Melika"
+repository-code: "https://github.com/Melikajahan/Opioid-Overdose-Regression-Analysis"
+date-released: 2026-05-25
+license: "custom"
