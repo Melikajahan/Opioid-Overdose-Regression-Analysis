@@ -72,7 +72,7 @@ This document records the sources and preparation steps for the **county-level**
   - Datasets aligned to a common county geography for South Carolina.
   - Variable names standardized for analysis; units documented in the data dictionary.
 
-> **Note:** ZIP-level datasets are confidential and are not included in this repository. Only county-level data and derived artifacts are shared here.
+> **Note:** ZIP-level analytic datasets are not included in this repository because they include restricted health outcome data and non-public demographic, socioeconomic, community, healthcare-access, treatment-access, and naloxone-access data. Only shareable county-level data and non-disclosive derived artifacts are shared here.
 
 ---
 
