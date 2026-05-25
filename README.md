@@ -48,8 +48,7 @@ opioid-overdose-regression-analysis/
 │
 ├── zip_level/
 │   ├── data/
-│   │   └── README.md         # Restricted-data note and expected schema
-│   └── outputs/              # Shareable derived outputs only, where appropriate
+│       └── README.md         # Restricted-data note and expected schema
 │
 ├── typology/
 │   └── outputs/              # Typology tables, maps, and summary figures
