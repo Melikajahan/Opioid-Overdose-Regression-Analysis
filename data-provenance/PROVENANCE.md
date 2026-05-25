@@ -6,11 +6,11 @@ This document records the sources and preparation steps for the **county-level**
 
 ## 1) Opioid mortality (CDC WONDER)
 
-- **Source:** Centers for Disease Control and Prevention, National Center for Health Statistics. *Multiple Cause of Death 2018–2023 on CDC WONDER Online Database*.
+- **Source:** Centers for Disease Control and Prevention, National Center for Health Statistics. *Multiple Cause of Death 2018–2022 on CDC WONDER Online Database*.
 - **Use in this project:** Age-adjusted opioid overdose death rate per 10,000 population at the county level (South Carolina).
 - **Accessed:** 2024-07-29
 - **URL:** https://wonder.cdc.gov/wonder/help/mcd-expanded.html
-- **Notes:** Followed CDC WONDER guidance on small-count suppression and standard rate interpretation.
+- **Notes:** Followed CDC WONDER guidance on small-count suppression and standard rate interpretation. The outcome used in the county-level analysis is the average annual age-adjusted opioid overdose death rate per 10,000 population over the 2018–2022 study period.
 
 **Suggested citation (BibTeX):**
     @report{cdc2024wonderdata,
