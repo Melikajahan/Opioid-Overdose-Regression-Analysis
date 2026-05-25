@@ -11,7 +11,6 @@ The study examines geographic variation in opioid overdose burden and naloxone a
 This repository is intended to support transparency and reproducibility for the manuscript by providing:
 
 - Shareable county-level data and documentation
-- Code used for regression, spatial diagnostics, and burden–access typology development
 - Data provenance and variable definitions
 - Selected derived outputs such as tables, figures, maps, and typology summaries
 - Documentation for the restricted ZIP-level analysis workflow without releasing non-public or restricted ZIP-level data values
