@@ -2,7 +2,7 @@
 
 This repository supports the manuscript:
 
-**A Typology based on Naloxone Availability, Opioid Overdose Mortality, and Emergency Department Visits in South Carolina**
+**A Typology Based on Naloxone Availability, Opioid Overdose Mortality, and Emergency Department Visits in South Carolina**
 
 The study examines geographic variation in opioid overdose burden and naloxone access in South Carolina using county-level and ZIP-level analyses. The repository includes shareable county-level data, code structure, data documentation, selected derived outputs, and reproducibility notes. ZIP-level data are not publicly shared because the ZIP-level analytic dataset includes restricted health outcome data and non-public demographic, socioeconomic, community, and naloxone-access data that are not suitable for open posting under the project’s data-use and confidentiality constraints.
 
