@@ -1,76 +1,70 @@
 # Opioid Overdose Regression Analysis – South Carolina
 
-This repository contains two related statistical and spatial regression analyses at **county** and **ZIP** levels, investigating the relationship between opioid overdose outcomes and factors such as **naloxone access**, **socioeconomic indicators**, and **demographics** in South Carolina.
+This repository supports the manuscript:
 
-## Project Overview
-The project explores:
-- Impact of naloxone distribution (counts & proximity) on overdose mortality (county) and opioid-related ED visits (ZIP)
-- Influence of community-level socioeconomic and demographic factors
-- Spatial dependencies in overdose outcomes
+**A Typology based on Naloxone Availability, Opioid Overdose Mortality, and Emergency Department Visits in South Carolina**
+
+The study examines geographic variation in opioid overdose burden and naloxone access in South Carolina using county-level and ZIP-level analyses. The repository includes shareable county-level data, code structure, data documentation, selected derived outputs, and reproducibility notes. ZIP-level data are not publicly shared because they include restricted/suppressed health outcome information and are not suitable for open posting.
+
+## Repository Purpose
+
+This repository is intended to support transparency and reproducibility for the manuscript by providing:
+
+- Shareable county-level data and documentation
+- Code used for regression, spatial diagnostics, and burden–access typology development
+- Data provenance and variable definitions
+- Selected derived outputs such as tables, figures, maps, and typology summaries
+- Documentation for restricted ZIP-level data structure without releasing confidential or suppressed values
+
+## Study Overview
+
+The analysis was conducted at two geographic scales:
+
+1. **County level**
+   - Outcome: age-adjusted opioid overdose death rate per 10,000 population
+   - Main modeling approach: spatial regression, with emphasis on the Spatial Error Model (SEM) after testing for spatial dependence
+   - Access measure: naloxone distribution center density per 1,000 square miles
+   - Additional covariates: socioeconomic, demographic, healthcare access, and treatment access variables
+
+2. **ZIP code level**
+   - Outcome: average annual opioid-related emergency department visits
+   - Main modeling approach: Negative Binomial regression due to overdispersed count data
+   - Access measures: naloxone center counts and proximity-based measures, including closest distance and average distance to nearby centers
+   - Additional covariates: socioeconomic, demographic, rurality, healthcare access, and treatment access variables
+
+The study also develops burden–access typologies to identify areas with relatively high opioid burden and relatively low naloxone access.
 
 ## Repository Structure
+
 ```plaintext
 opioid-overdose-regression-analysis/
 │
-├── county_level/       # County-level regression data
-│  ├─ data/
-│  │  ├─ raw/          
-│  │  ├─ processed/    
-│  │  └─ dictionary/  
-├── zip_level/          
-├── docs/               # Reports, visualizations, and summaries
-├─ data-provenance/
-│  └─ PROVENANCE.md
-├── LICENSE             # Custom license for viewing only
-├── README.md           # Main project overview
-└──DATA_LICENSE.md
-```
-
-
-## Methods & Models
-- **County-Level**: OLS with full diagnostics, Poisson & Negative Binomial Regression, Spatial Error (SEM) and Spatial Lag (SLM) Models
-- **ZIP-Level**: Poisson & Negative Binomial Regression, Spatial Lag/Durbin Models
-- **Diagnostics**: Linearity, homoscedasticity, residual normality, multicollinearity (VIF), Moran’s I
-- **Model Comparison**: AIC/BIC, R², log-likelihood, residual plots
-
-## Key Features
-- Multiple naloxone measures: center counts, distances from centroids (10, 20, 30 miles), closest/average distances
-- Buprenorphine provider counts as a treatment access proxy
-- Rich set of socioeconomic & demographic variables
-
-## Data
-- **County-level (open):** Included under `county_level/data/` with a separate data license (**CC BY 4.0**, see `DATA_LICENSE.md`). Detailed source attribution in `data-provenance/PROVENANCE.md`.
-
-- **ZIP-level (restricted):** **Not included** due to confidentiality. The folder `zip_level/data/` contains a README describing required file names/columns for local reproduction. Synthetic schemas may be provided for structure only (no real values).
-> Note: This repository’s *code* remains under a custom “view-only” license (see `LICENSE`). County-level *data* are separately licensed.
-
-### County-level data (files)
- - [`Edited_Dataset.csv`](county_level/data/raw/Edited_Dataset.csv) — raw input
- - [`county_master.csv`](county_level/data/processed/county_master.csv) — processed canonical copy
- - [`county_dictionary.csv`](county_level/data/dictionary/county_dictionary.csv) — column dictionary
-
-## Tech Stack
-- Python: `pandas`, `numpy`, `statsmodels`, `geopandas`, `PySAL`
-- GIS processing in ArcGIS
-
-## Key Findings (High-Level)
-- Naloxone access has a consistent, significant impact on reducing opioid overdose deaths (county level) and opioid-related ED visits (ZIP level).
-- County-level analysis:
-  * Higher rates of naloxone centers per 1,000 square miles are strongly associated with lower death rates.
-  * Spatial Durbin Models capture regional spillover effects — areas benefit from neighboring counties’ naloxone availability.
-  * Proportion of White Population is positively associated with death rates when controlling for other factors.
-- ZIP-level analysis:
-  * Center count is positively associated with ED visits (reflecting targeting toward high-need areas).
-  * Distance-based measures show a negative association — closer proximity to naloxone centers correlates with fewer ED visits.
-- Policy implications:
-  * Distance-based planning can better target underserved areas.
-  * Regional strategies are more effective than isolated local interventions.
-  * Accessibility and equity in naloxone distribution remain critical for harm reduction.
-
-## License
-This project is protected under a custom license.  
-You are welcome to **view the code** for personal, educational, or evaluation purposes.  
-However, **copying, reproducing, modifying, or using** this code without prior written permission from the author is strictly prohibited.  
-
-Collaboration and contributions are welcome but must be discussed in advance.  
-📩 Contact: [jahanmelika@gmail.com or www.linkedin.com/in/melika-jahan-beikloo]
+├── county_level/
+│   ├── data/
+│   │   ├── raw/              # Shareable county-level input data
+│   │   ├── processed/        # Processed county-level analysis data
+│   │   └── dictionary/       # County-level variable dictionary
+│   ├── scripts/              # County-level analysis scripts
+│   └── outputs/              # County-level tables, diagnostics, and figures
+│
+├── zip_level/
+│   ├── data/
+│   │   └── README.md         # Restricted-data note and expected schema
+│   ├── scripts/              # ZIP-level analysis scripts
+│   └── outputs/              # Shareable derived outputs only, where appropriate
+│
+├── typology/
+│   ├── scripts/              # Burden–access typology scripts
+│   └── outputs/              # Typology tables, maps, and summary figures
+│
+├── docs/
+│   ├── figures/              # Manuscript or supplementary figures
+│   ├── maps/                 # Shareable map outputs
+│   └── tables/               # Shareable result tables
+│
+├── data-provenance/
+│   └── PROVENANCE.md         # Data sources and processing notes
+│
+├── DATA_LICENSE.md           # License for shareable data
+├── LICENSE                   # License for code and repository materials
+└── README.md
