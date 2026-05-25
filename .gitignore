@@ -1,3 +1,20 @@
+# Restricted ZIP-level data: never commit
+zip_level/data/raw/
+zip_level/data/processed/
+zip_level/data/*.csv
+zip_level/data/*.xlsx
+zip_level/data/*.xls
+zip_level/data/*.geojson
+zip_level/data/*.shp
+zip_level/data/*.dbf
+zip_level/data/*.shx
+zip_level/data/*.prj
+
+# Local/private data folders
+private_data/
+restricted_data/
+local_data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
