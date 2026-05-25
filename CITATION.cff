@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: "Opioid Overdose Regression Analysis – South Carolina"
 message: "If you use this repository, please cite the associated manuscript."
-type: software
+type: dataset
 authors:
   - family-names: "Jahan Beikloo"
     given-names: "Melika"
