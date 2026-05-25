@@ -55,7 +55,6 @@ opioid-overdose-regression-analysis/
 │
 ├── docs/
 │   ├── figures/              # Manuscript or supplementary figures
-│   ├── maps/                 # Shareable map outputs
 │   └── tables/               # Shareable result tables
 │
 ├── data-provenance/
