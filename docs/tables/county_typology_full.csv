@@ -1,0 +1,27 @@
+COUNTY_NAME,Count_Naloxone_Centers_per_1000_square_miles,Death_Rates_per_10000_pop,burden_high,access_high,burden_bin,access_bin,typology
+Aiken County,12.96349857,3.689042957,True,False,High burden,Low access,High burden / Low access
+Laurens County,4.146565458,2.50726369,True,False,High burden,Low access,High burden / Low access
+Dorchester County,24.37110806,0.979629822,False,True,Low burden,High access,Low burden / High access
+Berkeley County,11.51905745,0.506968707,False,False,Low burden,Low access,Low burden / Low access
+Greenwood County,15.13392997,5.199231669,True,True,High burden,High access,High burden / High access
+Darlington County,10.62487461,1.912198231,True,False,High burden,Low access,High burden / Low access
+Oconee County,7.428495245,2.0201255,True,False,High burden,Low access,High burden / Low access
+Kershaw County,4.056877138,3.780432481,True,False,High burden,Low access,High burden / Low access
+Lexington County,38.35081798,0.399817417,False,True,Low burden,High access,Low burden / High access
+Greenville County,66.83951482,0.224788979,False,True,Low burden,High access,Low burden / High access
+Florence County,17.37936965,1.318642677,False,True,Low burden,High access,Low burden / High access
+Dillon County,7.401923738,5.696585609,True,False,High burden,Low access,High burden / Low access
+Horry County,33.20051395,1.668585996,False,True,Low burden,High access,Low burden / High access
+Union County,5.820101509,4.071661238,True,False,High burden,Low access,High burden / Low access
+Richland County,42.68171656,0.478117746,False,True,Low burden,High access,Low burden / High access
+Sumter County,11.69723132,2.195536379,True,False,High burden,Low access,High burden / Low access
+Orangeburg County,7.093119737,1.808056701,False,False,Low burden,Low access,Low burden / Low access
+Spartanburg County,26.74720384,0.625253079,False,True,Low burden,High access,Low burden / High access
+Lancaster County,12.59675962,4.983256259,True,False,High burden,Low access,High burden / Low access
+Beaufort County,24.7951912,0.521517825,False,True,Low burden,High access,Low burden / High access
+Anderson County,26.43411677,0.724959886,False,True,Low burden,High access,Low burden / High access
+Pickens County,23.43488926,3.100681394,True,True,High burden,High access,High burden / High access
+York County,31.68627181,0.450458255,False,True,Low burden,High access,Low burden / High access
+Charleston County,41.18275838,0.363175021,False,True,Low burden,High access,Low burden / High access
+Chesterfield County,3.725532045,2.542294536,True,False,High burden,Low access,High burden / Low access
+Georgetown County,8.251682269,4.849736393,True,False,High burden,Low access,High burden / Low access
