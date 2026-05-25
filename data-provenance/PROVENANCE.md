@@ -12,16 +12,6 @@ This document records the sources and preparation steps for the **county-level**
 - **URL:** https://wonder.cdc.gov/wonder/help/mcd-expanded.html
 - **Notes:** Followed CDC WONDER guidance on small-count suppression and standard rate interpretation. The outcome used in the county-level analysis is the average annual age-adjusted opioid overdose death rate per 10,000 population over the 2018–2022 study period.
 
-**Suggested citation (BibTeX):**
-    @report{cdc2024wonderdata,
-      author       = {{Centers for Disease Control and Prevention, National Center for Health Statistics}},
-      title        = {Multiple Cause of Death 2018--2023 on CDC WONDER Online Database},
-      institution  = {{CDC WONDER}},
-      year         = {2024},
-      url          = {https://wonder.cdc.gov/wonder/help/mcd-expanded.html},
-      note         = {Accessed 2024-07-29}
-    }
-
 ---
 
 ## 2) Naloxone distribution centers (SC DHEC / ArcGIS Hub)
@@ -32,15 +22,6 @@ This document records the sources and preparation steps for the **county-level**
 - **URL:** https://arc-gis-hub-home-arcgishub.hub.arcgis.com/maps/13903a78e86048ceb05e4c16ce1f58dc/about
 - **Processing:** Points were geocoded and aggregated to the county level using GIS software. To account for geographic variation in county size, the count of naloxone centers was normalized by land area and expressed as **centers per 1,000 square miles**.
 
-**Suggested citation (BibTeX):**
-    @misc{scdhec2024naloxonemap,
-      author       = {{South Carolina Department of Health and Environmental Control}},
-      title        = {Naloxone Locations -- SC DHEC [Map]},
-      year         = {2024},
-      url          = {https://arc-gis-hub-home-arcgishub.hub.arcgis.com/maps/13903a78e86048ceb05e4c16ce1f58dc/about},
-      note         = {Accessed 2024-07-29}
-    }
-
 ---
 
 ## 3) Socioeconomic & demographic indicators (ACS via ArcGIS Online)
@@ -49,15 +30,6 @@ This document records the sources and preparation steps for the **county-level**
 - **Use in this project:** Community-level socioeconomic and demographic variables aggregated and analyzed at the **county** level using the most recent estimates available for 2023.
 - **Accessed:** 2024-07-29
 - **ArcGIS item:** https://www.arcgis.com/home/item.html?id=ddd1510ed1964e2e8fb1ded93e9b03b1
-
-**Suggested citation (BibTeX):**
-    @misc{uscensus2024acs,
-      author       = {{U.S. Census Bureau}},
-      title        = {ACS 2017--2021 Demographic and Housing Estimates -- Census Tract Summary [Data set]},
-      year         = {2024},
-      howpublished = {\url{https://www.arcgis.com/home/item.html?id=ddd1510ed1964e2e8fb1ded93e9b03b1}},
-      note         = {Accessed 2024-07-29}
-    }
 
 ---
 
