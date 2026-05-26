@@ -56,8 +56,8 @@ opioid-overdose-regression-analysis/
 ├── data-provenance/
 │   └── PROVENANCE.md         # Data sources and processing notes
 │
-├── CITATION.cff
-├── REPRODUCIBILITY.md
+├── CITATION.cff              # Citation metadata for referencing this repository
+├── REPRODUCIBILITY.md        # Notes on reproducibility and restricted ZIP-level data access
 ├── DATA_LICENSE.md           # License for shareable data
 ├── LICENSE                   # License for repository materials
 └── README.md
