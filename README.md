@@ -47,7 +47,7 @@ opioid-overdose-regression-analysis/
 │
 ├── zip_level/
 │   ├── data/
-│       └── README.md         # Restricted-data note and expected schem
+│       └── README.md         # Restricted-data note and expected scheme
 │
 ├── docs/
 │   ├── figures/              # Selected manuscript figures and map outputs
@@ -56,6 +56,8 @@ opioid-overdose-regression-analysis/
 ├── data-provenance/
 │   └── PROVENANCE.md         # Data sources and processing notes
 │
+├── CITATION.cff
+├── REPRODUCIBILITY.md
 ├── DATA_LICENSE.md           # License for shareable data
-├── LICENSE                   # License for code and repository materials
+├── LICENSE                   # License for repository materials
 └── README.md
